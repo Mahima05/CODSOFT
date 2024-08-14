@@ -44,7 +44,6 @@ class RockPaperScissorsGame:
             return 3
 
     def load_images(self):
-        # Resize images to 50x50 using the LANCZOS filter
         self.rock_img = ImageTk.PhotoImage(Image.open("rock.png").resize((75, 75), Image.LANCZOS))
         self.paper_img = ImageTk.PhotoImage(Image.open("paper.png").resize((75, 75), Image.LANCZOS))
         self.scissor_img = ImageTk.PhotoImage(Image.open("scissor.png").resize((75, 75), Image.LANCZOS))
